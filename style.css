@@ -1,0 +1,21 @@
+body{margin:0;font-family:Arial,sans-serif;background:linear-gradient(135deg,#ff9a9e,#fad0c4);
+  min-height:100vh;color:#333;display:flex;flex-direction:column}
+header.hero{text-align:center;padding:30px 15px;color:#fff;background:linear-gradient(135deg,#667eea,#764ba2)}
+.container{flex:1;max-width:600px;margin:20px auto;padding:10px}
+.card{background:#fff;border-radius:12px;box-shadow:0 4px 15px rgba(0,0,0,0.2);padding:20px;margin-bottom:20px}
+.price{font-size:20px;font-weight:bold;margin:10px 0}
+.buttons{display:flex;flex-wrap:wrap;gap:10px}
+.pay-btn,button, a.whatsapp{flex:1;text-align:center;padding:10px;
+  background:linear-gradient(135deg,#ff512f,#dd2476);color:#fff;border-radius:8px;text-decoration:none;font-weight:bold;border:none;cursor:pointer}
+.pay-btn:hover,button:hover,a.whatsapp:hover{opacity:0.9}
+.qr-block{display:none;text-align:center;margin-top:15px}
+.qr-block img{max-width:180px}
+input{width:100%;padding:8px;margin:5px 0;border:1px solid #ccc;border-radius:6px}
+.notif-container{position:fixed;top:20px;right:20px;z-index:200}
+.notif{background:#fff;padding:10px 15px;border-radius:6px;box-shadow:0 2px 8px rgba(0,0,0,0.2);
+  margin-top:10px;animation:fadeIn 0.5s ease}
+@keyframes fadeIn{from{opacity:0;transform:translateY(-10px)}to{opacity:1;transform:translateY(0)}}
+/* Popup modal */
+.popup{position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.6);
+  display:none;align-items:center;justify-content:center;z-index:500}
+.popup-content{background:#fff;padding:20px;border-radius:8px;max-width:300px;text-align:center}
